@@ -25,9 +25,7 @@ def clean():
 			value['experience'] = False
 			inexperienced.append(value)
 			
-		value['guardians'] = value['guardians'].split()
-		if "and" in value['guardians']:
-			value['guardians'].remove("and")
+		value['guardians'] = value['guardians'].split(' and ')
 			
 	
 def team_balance():
